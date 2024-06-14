@@ -1,0 +1,235 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  
+    background-image: url("images/sky.png");
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: transparent;
+    color: white;
+    height: 60px;
+    position: relative;
+  
+    &::after {
+      content: ''; 
+      position: absolute; 
+      bottom: 0; 
+      left: 0; 
+      width: 100%; 
+      height: 10px; 
+      background: transparent; 
+      box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3); 
+    }
+  }
+  
+  .logo img {
+    width: 100px; 
+  }
+  
+  nav {
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+  
+      li {
+        margin: 0 10px;
+  
+        a {
+          text-decoration: none;
+          color: white;
+  
+          &:hover {
+            color: cyan;
+          }
+        }
+  
+        &:hover .dropdown {
+          display: block;
+        }
+      }
+    }
+  }
+  
+  .dropdown {
+    display: none;
+    position: absolute;
+    background-color: black;
+  
+    li {
+      display: block;
+  
+      a {
+        padding: 10px;
+      }
+    }
+  }
+  
+  /* Home section */
+  * {
+    .home {
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      background-image: url("images/BackgroundHome.png");
+      background-size: cover;
+      color: white;
+  
+      &:hover {
+        background-color: #555;
+      }
+    }
+  
+    .center-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .home-container {
+      display: flex;
+      justify-content: space-between; 
+      width: 60vw;
+    }
+  }
+  
+  .container {
+    display: flex;
+    padding: 20px;
+    max-width: 800px;
+  
+    .image {
+      flex: 1;
+      padding-right: 20px;
+  
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  
+    .text {
+      flex: 1;
+      padding-left: 20px;
+    }
+  }
+  
+  h1 {
+    margin: 0 0 10px;
+  }
+  
+  p {
+    margin: 0;
+    white-space: pre-wrap; 
+  }
+  
+  /* social Media */
+  .media {
+    background-color: transparent;
+    height: 150px;
+    display: block;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: white;
+  
+    .icon-list {
+      display: flex;
+      justify-content: center;
+      list-style-type: none;
+      padding: 0;
+  
+      .icon {
+        margin: 0 0.5rem;
+        font-size: 1.8rem;
+  
+        a {
+          color: white;
+          text-decoration: none;
+  
+          &:hover {
+            color: #00f;
+          }
+        }
+      }
+    }
+  }
+  
+  /* About and skills Section */
+  .intro {
+    background-image: url("images/sky.png");
+    background-size: cover;
+    background-color: #253738;
+    color: white;
+  
+    .container2 {
+      margin-top: 5px;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+  
+      .skills, .about {
+        flex: 1;
+        padding: 20px;
+        border: 1px solid #000;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+      }
+    }
+  
+    .button-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+  
+      .tech-button {
+        padding: 10px 20px;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        background-color: gray;
+        color: white;
+        transition: background-color 0.3s;
+  
+        &:hover {
+          background-color: blue;
+          transform: scale(1.4);
+        }
+      }
+  
+      .red-icon {
+        color: red;
+      }
+    }
+  }
+  
+  /* Project section */
+  .projects {
+    background-image: url("images/ship.png");
+    background-size: cover;
+    background-color: #253738;
+    color: red;
+  
+    .custom-bg {
+      background-image: url('images/Icebarg.png');
+      background-size: cover;
+      background-position: center;
+    }
+  }
+  
+  /* Contact section */
+  .contact {
+    background-image: url("images/ship.png");
+    background-size: cover;
+    background-color: #253738;
+    color: red;
+  }
+  
